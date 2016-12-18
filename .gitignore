@@ -3,4 +3,3 @@ Cargo.lock
 
 # build.rs output files
 db-4.8.30/build_unix/**
-src/ffi.rs
