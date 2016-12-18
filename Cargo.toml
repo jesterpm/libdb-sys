@@ -1,0 +1,13 @@
+[package]
+name = "libdb-sys"
+version = "4.8.0"
+authors = ["Jesse Morgan <jesse@jesterpm.net>"]
+
+links = "db"
+build = "build.rs"
+
+[dependencies]
+libc = "0.2.0"
+
+[build-dependencies]
+bindgen = "0.19.0"
