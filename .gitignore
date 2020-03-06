@@ -3,3 +3,4 @@ Cargo.lock
 
 # build.rs output files
 db-4.8.30/build_unix/**
+db-5.3.21/build_unix**
