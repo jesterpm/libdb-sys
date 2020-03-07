@@ -6,6 +6,15 @@ authors = ["Karl Fischer <fishi0x01@gmail.com>"]
 links = "db"
 build = "build.rs"
 
+license = "BSD AND LGPLv2 AND Sleepycat"
+readme = "README.md"
+repository = "https://github.com/fishi0x01/libdb-sys"
+description = """
+statically linked ffi bindings for Berkeley DB
+"""
+keywords = ["ffi", "static-linking", "berkeley-db"]
+categories = ["external-ffi-bindings"]
+
 [features]
 default = []
 v5_3 = []
