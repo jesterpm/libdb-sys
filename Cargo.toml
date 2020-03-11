@@ -6,7 +6,7 @@ authors = ["Karl Fischer <fishi0x01@gmail.com>"]
 links = "db"
 build = "build.rs"
 
-license = "BSD AND LGPLv2 AND Sleepycat"
+license = "Sleepycat"
 readme = "README.md"
 repository = "https://github.com/fishi0x01/libdb-sys"
 description = """

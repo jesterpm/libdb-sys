@@ -20,7 +20,7 @@ By default, Berkeley DB 5.3.x is used.
 
 Website: http://www.oracle.com/database/berkeley-db/
 
-License: BSD and LGPLv2 and Sleepycat
+License: Sleepycat
 
 Description:
 ```
