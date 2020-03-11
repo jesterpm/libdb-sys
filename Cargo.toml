@@ -15,6 +15,17 @@ statically linked ffi bindings for Berkeley DB
 keywords = ["ffi", "static-linking", "berkeley-db"]
 categories = ["external-ffi-bindings"]
 
+exclude = [
+    "vendor/db-4.8.30/examples_*",
+    "vendor/db-4.8.30/docs/*",
+    "vendor/db-5.3.21/examples/*",
+    "vendor/db-5.3.21/docs/*",
+    "vendor/db-5.3.21/lang/*",
+    "vendor/db-5.3.21/test/java/*",
+    "vendor/db-5.3.21/test/csharp/*",
+    "vendor/db-5.3.21/test/sql/*",
+]
+
 [features]
 default = []
 v5_3 = []

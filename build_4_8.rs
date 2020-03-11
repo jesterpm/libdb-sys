@@ -3,16 +3,16 @@ extern crate bindgen;
 use std::path::{PathBuf, Path};
 use std::process::Command;
 
-pub const SOURCE_DIR: &'static str = "db-4.8.30";
+pub const SOURCE: &'static str = "db-4.8.30";
 
 pub fn build_unix(out_dir: &str) {
-    let copy_dir = Path::new(out_dir).join(SOURCE_DIR);
+    let copy_dir = Path::new(out_dir).join(SOURCE);
     let build_dir = copy_dir.join("build_unix");
 
     // copy source to out_dir
     Command::new("cp")
         .arg("-r")
-        .arg(Path::new(SOURCE_DIR).to_str().unwrap())
+        .arg(Path::new("vendor").join(SOURCE).to_str().unwrap())
         .arg(copy_dir.to_str().unwrap())
         .status()
         .unwrap();
@@ -39,7 +39,7 @@ pub fn build_unix(out_dir: &str) {
 }
 
 pub fn generate_bindings(out_dir: &str) {
-    let build_dir = Path::new(out_dir).join(SOURCE_DIR).join("build_unix");
+    let build_dir = Path::new(out_dir).join(SOURCE).join("build_unix");
     let bindings = bindgen::Builder::default()
         .header(build_dir.join("db.h").to_str().unwrap())
         .derive_copy(true)
