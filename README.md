@@ -1,6 +1,8 @@
 **Status**
 
 ![CI](https://github.com/fishi0x01/libdb-sys/workflows/CI/badge.svg)
+[![crates.io badge](https://img.shields.io/crates/v/libdb-sys.svg)](https://crates.io/crates/libdb-sys)
+[![docs.rs badge](https://docs.rs/libdb-sys/badge.svg)](https://docs.rs/libdb-sys)
 
 # libdb-sys
 
@@ -15,6 +17,13 @@ This is a humble fork from [jesterpm's](https://github.com/jesterpm/libdb-sys) l
 `v5_3` uses bindings for Berkeley DB 5.3.x.
 
 By default, Berkeley DB 5.3.x is used. 
+
+## crev
+
+This crate has its author's [crev review](https://github.com/fishi0x01/crev-proofs).
+
+It is recommended to always use [cargo-crev](https://github.com/crev-dev/cargo-crev)
+to verify the trustworthiness of each of your dependencies, including this one.
 
 ## Berkeley DB licensing notice
 

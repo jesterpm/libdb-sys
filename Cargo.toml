@@ -1,6 +1,6 @@
 [package]
 name = "libdb-sys"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Karl Fischer <fishi0x01@gmail.com>"]
 
 links = "db"
@@ -30,6 +30,9 @@ exclude = [
 default = []
 v5_3 = []
 v4_8 = []
+
+[badges]
+maintenance = { status = "passively-maintained" }
 
 [dependencies]
 
