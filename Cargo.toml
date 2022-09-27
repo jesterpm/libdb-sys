@@ -1,10 +1,40 @@
 [package]
 name = "libdb-sys"
-version = "4.8.0"
-authors = ["Jesse Morgan <jesse@jesterpm.net>"]
+version = "0.1.1"
+authors = ["Karl Fischer <fishi0x01@gmail.com>"]
 
 links = "db"
 build = "build.rs"
 
+license = "Sleepycat"
+readme = "README.md"
+repository = "https://github.com/fishi0x01/libdb-sys"
+description = """
+statically linked ffi bindings for Berkeley DB
+"""
+keywords = ["ffi", "static-linking", "berkeley-db"]
+categories = ["external-ffi-bindings"]
+
+exclude = [
+    "vendor/db-4.8.30/examples_*",
+    "vendor/db-4.8.30/docs/*",
+    "vendor/db-5.3.21/examples/*",
+    "vendor/db-5.3.21/docs/*",
+    "vendor/db-5.3.21/lang/*",
+    "vendor/db-5.3.21/test/java/*",
+    "vendor/db-5.3.21/test/csharp/*",
+    "vendor/db-5.3.21/test/sql/*",
+]
+
+[features]
+default = []
+v5_3 = []
+v4_8 = []
+
+[badges]
+maintenance = { status = "passively-maintained" }
+
 [dependencies]
-libc = "0.2.0"
+
+[build-dependencies]
+bindgen = "0.51.1"

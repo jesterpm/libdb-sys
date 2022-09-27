@@ -1,5 +1,9 @@
-//! FFI Bindings for Berkeley DB 4.8.
+//! FFI Bindings for Berkeley DB.
 
-extern crate libc;
-
-pub mod ffi;
+pub mod ffi {
+    #![allow(non_upper_case_globals)]
+    #![allow(non_camel_case_types)]
+    #![allow(non_snake_case)]
+    #![allow(unused)]
+    include!(concat!(env!("OUT_DIR"), "/ffi.rs"));
+}
